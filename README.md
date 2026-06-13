@@ -1,15 +1,19 @@
-# dsig 
+# dsig - Die Slaven in Griechenland
 
-## Die Slaven in Griechenland
+This is a project started with the goal of structuring and mapping the placenames listed by Max Vasmer in his work [Die Slaven in Griechenland](http://promacedonia.org/en/mv/index.html) on placenames of Slavic origin in modern Greece. The data can be used by historians, linguists and researchers of related topics.
 
-This is a project started with the goal of structuring and mapping the placenames listed by Max Vasmer in his work [Die Slaven in Griechenland] (http://promacedonia.org/en/mv/index.html) on placenames of Slavic origin in modern Greece. The data can be used by historians, linguists and researchers of related topics.
+[Explore the map here](https://dimithrandir.github.io/dsig/)
 
-[Explore the map here] (https://dimithrandir.github.io/dsig/)
+<a href="https://dimithrandir.github.io/dsig/">
+    <img src="./img/screenshot.png" alt="screenshot" width="690px" height="450px"/>
+</a>
 
 ## Data
 
 Data from the book entries is extracted to `data/book_data.csv`.
+
 The geodata is in `data/mapped_data.csv`.
+
 These two files are joined into `data/data.csv`.
 
 ## Progress
@@ -22,8 +26,8 @@ Many of the places not found yet are only known from historical records and it i
 
 Libraries used:
 
-* [Leaflet] (https://leafletjs.com/)
+* [Leaflet](https://leafletjs.com/)
 
-* [Leaflet.GroupedLayerControl] (https://github.com/ismyrnow/leaflet-groupedlayercontrol) plugin
+* [Leaflet.GroupedLayerControl](https://github.com/ismyrnow/leaflet-groupedlayercontrol) plugin
 
-* [Papa Parse] (https://www.papaparse.com/)
+* [Papa Parse](https://www.papaparse.com/)
