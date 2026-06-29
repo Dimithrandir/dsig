@@ -18,7 +18,7 @@ These two files are joined into `data/data.csv`.
 
 ## Progress
 
-1592 / 2145 places mapped (74.22%)
+1591 / 2145 places mapped (74.17%)
 
 Many of the places not found yet are only known from historical records and it is impossible to locate today, however there's still room for progress and any help is welcome.
 
