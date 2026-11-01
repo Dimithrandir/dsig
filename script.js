@@ -349,11 +349,23 @@ var osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	referrerPolicy: 'strict-origin-when-cross-origin'
 });
 
+var stamenTonerLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner-lite/{z}/{x}/{y}.png', {
+	maxZoom: 17,
+    attribution: '&copy; <a href="https://www.stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://www.stamen.com/">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/about">OpenStreetMap contributors</a>',
+	referrerPolicy: 'strict-origin-when-cross-origin'
+}).addTo(map);
+
+var stamenTerrainLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}.png', {
+	maxZoom: 17,
+    attribution: '&copy; <a href="https://www.stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://www.stamen.com/">Stamen Design</a> &copy; <a href="https://www.openmaptiles.org/">OpenMap Tiles</a> &copy; <a href="https://www.openstreetmap.org/about">OpenStreetMap contributors</a>',
+	referrerPolicy: 'strict-origin-when-cross-origin'
+});
+
 var cartoLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 	maxZoom: 17,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/attribution">CARTO</a>',
 	referrerPolicy: 'strict-origin-when-cross-origin'
-}).addTo(map);
+});
 
 
 // SCALE
@@ -369,6 +381,8 @@ L.DomEvent.disableScrollPropagation(layerControl.getContainer());
 L.DomEvent.disableClickPropagation(layerControl.getContainer());
 
 layerControl.addBaseLayer(osmLayer, "OSM");
+layerControl.addBaseLayer(stamenTonerLayer, "Stamen Toner");
+layerControl.addBaseLayer(stamenTerrainLayer, "Stamen Terrain");
 layerControl.addBaseLayer(cartoLayer, "CARTO");
 
 
