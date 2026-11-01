@@ -347,13 +347,13 @@ var osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 17,
 	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 	referrerPolicy: 'strict-origin-when-cross-origin'
-});
+}).addTo(map);
 
 var stamenTonerLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner-lite/{z}/{x}/{y}.png', {
 	maxZoom: 17,
     attribution: '&copy; <a href="https://www.stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://www.stamen.com/">Stamen Design</a> &copy; <a href="https://www.openstreetmap.org/about">OpenStreetMap contributors</a>',
 	referrerPolicy: 'strict-origin-when-cross-origin'
-}).addTo(map);
+});
 
 var stamenTerrainLayer = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}.png', {
 	maxZoom: 17,
